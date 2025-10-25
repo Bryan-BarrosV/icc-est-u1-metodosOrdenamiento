@@ -1,5 +1,7 @@
 public class SortInserccion {
-
+    /*
+     * Ordenamiento Enteros Ascendete y Descendente
+     */
     public void sortInserccion(int[] numeros, boolean pasos){
         for(int i = 1; i < numeros.length; i++){
             int j = i - 1;
@@ -31,7 +33,7 @@ public class SortInserccion {
             if (pasos){
                 System.out.println("i: " + i + ", j: " + j +", aux: " + aux);
             }
-            while (j >= 0 && numeros[j] < aux) { // 👈 invertida la comparación
+            while (j >= 0 && numeros[j] < aux) {
                 if(pasos)
                     System.out.println("Compara aux: " + aux + " con numeros[" + j + "]: " + numeros[j]);
                 numeros[j + 1] = numeros[j];
@@ -93,7 +95,7 @@ public class SortInserccion {
         }
     }
 
-    // Métodos de impresión
+    
     public void printArrayPersonas(Persona[] personas){
         for (int i = 0; i < personas.length; i++) {
             System.out.println("Nombre: " + personas[i].getNombre() + ", Edad: " + personas[i].getEdad());
